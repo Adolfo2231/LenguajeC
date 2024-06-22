@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+<<<<<<< HEAD
 int main() {
 	// 1. Declaramos una variable
 	int miNumero;
@@ -14,8 +15,27 @@ int main() {
 	
 	//2. Imprimir el valor de las variables
 	printf("\nMi numero dos es: %d, numero tres es: %d ",miNumero2, miNumero3);
+=======
+/*
+Tipos de datos en C
+*/
+int main(){
+	
+	//Tipo entero (formato %d, %i)
+	int entero=10;
+	printf("Tipo entero: %i", entero);
+	
+	//Tipo flotantte (formato %f) %.2f mostrara solo 2 numero despues del punto
+	float flotante = 3800.5;
+	printf("\nTipo flotante: %.2f", flotante);
+	
+	//Tipo double (formato %f, %1f -> long float)
+	double doble = 15.4;
+	printf("\nTipo doble: %.6f", doble);
+>>>>>>> master
 
 	
 	return 0;
 }
-
+	
+	
