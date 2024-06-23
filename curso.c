@@ -1,20 +1,25 @@
 #include <stdio.h>
-//Definimos que nuestra constante sea PI 3.1416
-#define PI 3.1416
+#include <stdbool.h>
 
-#include<math.h>
 int main() {
-	// 1. Definir constantes en C (DEBEN SER MAYUSCULAS)
-	const int MI_CONSTANTE = 10;
-	//MI_CONSTANTE = 20;
+	//sizeof - Nos dira cuantos byte hay en cada dato
+	//Definicion de variables
+	int entero;
+	int flotante;
+	double doble;
+	char caracter;
+	char cadena[]="Hola Mundo";
+	bool boleano = true;
 	
-	printf("Valor constante = %d", MI_CONSTANTE);
-	printf("\nValor de PI = %.4f", PI);
-	printf("\n Valor PI Math = %f", M_PI);//M_PI constante de la libreria math.h
+	//Imprimir ccada variable (tamanio)
+	//%lu -especificador de formato(long unsigned) devuelve solo valores positivos
 	
-	//Constante Segundor por minuto
-	const int SEGUNDOR_POR_MINUTO = 60;
-	printf("\nConstatnte SEGUNDOR_POR_MINUTO= %d", SEGUNDOR_POR_MINUTO);
+	printf("int tamanio bytes: %lu", sizeof(entero));
+	printf("\nfloat tamanio bytes: %lu", sizeof(flotante));
+	printf("\ndouble tamanio bytes: %lu", sizeof(doble));
+	printf("\nchar tamanio bytes: %lu", sizeof(caracter));
+	printf("\ncadena tamanio bytes: %lu", sizeof(cadena));
+	printf("\nbool tamanio bytes: %lu", sizeof(boleano));
 	
 	return 0;
 }
