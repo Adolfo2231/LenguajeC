@@ -1,18 +1,34 @@
 #include <stdio.h>
+#include <stdbool.h>
 
 int main() {
-	// 1. Declarar variable
-	int tamanio_cadena = 30;
-	char nombre[tamanio_cadena];
-	// 2. Inidicar al usuario que proporcione el valor
-	printf("Proporciona tu nombre:");
-	// 3. Leer la informacion
-	//scanf("%[^'\n']s", nombre);
-	//fgets(nombre, tamanio_cadena, stdin);
-	gets(nombre);
-	// 4. Imprimimos el valor
-	printf("El nombre es: %s", nombre);
+	
+	// 1. Definimos las variables a utilizar
+	int edad;
+	bool empleadoConfianza;
+	int empleadoConfianzaTemp;
+	int largoCadena=50;
+	char nombreCompleto[largoCadena];
+	float sueldo;
+	
+	//2. Solicitar los valores al usuario
+	printf("Proporciona tu nombre: \n");
+	scanf("%[^'\n']s]", nombreCompleto);
+	printf("Proporciona tu edad: \n");
+	scanf("%d", &edad);
+	printf("Proporciona tu sueldo (USD): \n");
+	scanf("%f", &sueldo);
+	printf("Eres empleado de confianza(1/0)? \n");
+	scanf("%d",&empleadoConfianzaTemp);
+	empleadoConfianza = empleadoConfianzaTemp;
+	
+	//Imprimir informacion
+	printf("La informacion proporcionadad es:");
+	printf("\nNombre: %s", nombreCompleto);
+	printf("\nEdad: %d", edad);
+	printf("\nSueldo: $%.2f", sueldo);
+	printf("\nEmpleado de confianza: %d", empleadoConfianza);
+	
 	
 	return 0;
 }
-
