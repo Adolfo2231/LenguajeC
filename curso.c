@@ -1,25 +1,36 @@
 #include <stdio.h>
 #include <stdbool.h>
+#include <math.h>
 
 int main() {
-	//sizeof - Nos dira cuantos byte hay en cada dato
-	//Definicion de variables
-	int entero;
-	int flotante;
-	double doble;
-	char caracter;
-	char cadena[]="Hola Mundo";
-	bool boleano = true;
+	//Operadores aritmeticos
+	int a, b, c, e, f;
+	float d;
+	printf("valor de a: %d", a);
 	
-	//Imprimir ccada variable (tamanio)
-	//%lu -especificador de formato(long unsigned) devuelve solo valores positivos
+	//Suma + (literales)
+	a = 3 + 4;
+	printf("\nSuma: %d ", a);
 	
-	printf("int tamanio bytes: %lu", sizeof(entero));
-	printf("\nfloat tamanio bytes: %lu", sizeof(flotante));
-	printf("\ndouble tamanio bytes: %lu", sizeof(doble));
-	printf("\nchar tamanio bytes: %lu", sizeof(caracter));
-	printf("\ncadena tamanio bytes: %lu", sizeof(cadena));
-	printf("\nbool tamanio bytes: %lu", sizeof(boleano));
+	//Resta -
+	b = 6 - 2;
+	printf("\nResta: %d", b);
+	
+	//Multiplicacion *
+	c = a * 2;
+	printf("\nMultiplicacion: %d", c);
+	
+	//Division
+	d = b / 2.5;
+	printf("\nDivision: %.2f", d);
+	
+	//Modulo (residuo de la division)
+	f = 9 % 2;
+	printf("\nResiduo de division: %d", f);
+	
+	//Potencia
+	e = pow(a,2);
+	printf("\nPotencia: %d", e);
 	
 	return 0;
 }
