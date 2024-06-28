@@ -1,36 +1,35 @@
 #include <stdio.h>
-#include <stdbool.h>
-#include <math.h>
+
 
 int main() {
-	//Operadores aritmeticos
-	int a, b, c, e, f;
-	float d;
-	printf("valor de a: %d", a);
+	int a, b, c;
+	//Operadores de Incremento: Pre-incremento y Post-incremento)
+	a = 0;
 	
-	//Suma + (literales)
-	a = 3 + 4;
-	printf("\nSuma: %d ", a);
+	//Post-incremento
+	a++;//Se incrementa la proxima vez que utilicemos esta variable
+	printf("Nuevo valor de a: %d", a);
 	
-	//Resta -
-	b = 6 - 2;
-	printf("\nResta: %d", b);
 	
-	//Multiplicacion *
-	c = a * 2;
-	printf("\nMultiplicacion: %d", c);
+	//Pre-incremento
+	++a;
+	printf("/nNuevo valor de a: %d", a);
 	
-	//Division
-	d = b / 2.5;
-	printf("\nDivision: %.2f", d);
+	//ejemplo
+	a = 5;
+	b = 2;
+	c = ++a * b++;
+	printf("\nValor en a: %d",a);//No tenia pendiente ningun incremento
+	printf("\nValor en b: %d",b);//Si tenia pendiente un incremento
+	printf("\nValor en c: %d",c);
 	
-	//Modulo (residuo de la division)
-	f = 9 % 2;
-	printf("\nResiduo de division: %d", f);
-	
-	//Potencia
-	e = pow(a,2);
-	printf("\nPotencia: %d", e);
+	//Operador decremento: Pre-decremento y post decremento
+	a = 5;
+	b = 2;
+	c = --a * b--;
+	printf("\nValor en a: %d",a);//No tenia pendiente ningun decremento 
+	printf("\nValor en b: %d",b);//Si tenia pendiente un decremento 
+	printf("\nValor en c: %d",c);
 	
 	return 0;
 }
