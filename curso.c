@@ -1,34 +1,37 @@
 #include <stdio.h>
-
+#include <stdbool.h>
 
 int main() {
-	//Operadores de Asignacion
-	//Operador = para asignar valar
-	int miNumero = 10;
-	printf("Valor miNumero: %d", miNumero);
-	miNumero = 20;
-	printf("\nValor miNumero: %d", miNumero);
 	
+	// Operadores Relacionales (Comparacion)
+	int a = 5;
+	int b = 6;
+	printf("Valor a: %d", a);
+	printf("\nValor b: %d", b);
 	
-	//Operador += (Operador compuesto)
-	miNumero += 5; //miNumero = miNumero +5
-	printf("\nValor miNumero: %d", miNumero);
+	// Operador igualdad
+	bool c = a == b;
+	printf("\na igual que b? %d", c);
 	
-	//Operador -= (Operador compuesto)
-	miNumero -= 3; //miNumero = miNumero -5
-	printf("\nValor miNumero: %d", miNumero);
+	// Operador distinto !
+	c = a != b;
+	printf("\na distinto que b? %d", c);
 	
-	//Operador *= (Operador compuesto)
-	miNumero *= 2; //miNumero = miNumero *5
-	printf("\nValor miNumero: %d", miNumero);
+	// Operador Mayor que
+	c = a > b;
+	printf("\na mayor que b? %d", c);
 	
-	//Operador /= (Operador compuesto)
-	miNumero /= 7; //miNumero = miNumero /5
-	printf("\nValor miNumero: %d", miNumero);
+	// Operador Mayor o igual que
+	c = a >= b;
+	printf("\na mayor o igual que b? %d ", c);
 	
-	//Operador %= (Operador compuesto)
-	miNumero %= 2; //miNumero = miNumero %5
-	printf("\nValor miNumero: %d", miNumero);
+	// Operador Menor que 
+	c = a < b;
+	printf("\na menor que b? %d", c);
+	
+	// Operador Menor o igual que
+	c = a <= b;
+	printf("\na menor o igual que b? %d", c);
 	
 	return 0;
 }
