@@ -13,7 +13,7 @@ int main() {
 	scanf("%d", &altura);
 	
 	area = base * altura;
-	perimetro = 2 * (base * altura);
+	perimetro = 2 * (base + altura);
 	
 	printf("\nArea del rectangulo: %d", area);
 	printf("\nPerimetro del rectangulo: %d", perimetro);
