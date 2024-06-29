@@ -2,36 +2,23 @@
 #include <stdbool.h>
 
 int main() {
-	
-	// Operadores Relacionales (Comparacion)
-	int a = 5;
-	int b = 6;
+	// Operadores Logicos
+	bool a = true;// Verdadero - 1
+	bool b = false;// Falso - 0
 	printf("Valor a: %d", a);
 	printf("\nValor b: %d", b);
-	
-	// Operador igualdad
-	bool c = a == b;
-	printf("\na igual que b? %d", c);
-	
-	// Operador distinto !
-	c = a != b;
-	printf("\na distinto que b? %d", c);
-	
-	// Operador Mayor que
-	c = a > b;
-	printf("\na mayor que b? %d", c);
-	
-	// Operador Mayor o igual que
-	c = a >= b;
-	printf("\na mayor o igual que b? %d ", c);
-	
-	// Operador Menor que 
-	c = a < b;
-	printf("\na menor que b? %d", c);
-	
-	// Operador Menor o igual que
-	c = a <= b;
-	printf("\na menor o igual que b? %d", c);
+	// Operador Logico && (and o Y)
+	// Regresar verdadero si ambos operandos son verdaderos
+	bool c = a && b;
+	printf("\nResultado operador and: %d", c);
+	// Operador Logico || (or o O)
+	// Regresa verdadero si cualquiera de los operandos es verdadero
+	c = a || b;
+	printf("\nResultado operador or: %d", c);
+	// Operador Logico ! (Not o NO)
+	// Invierte el valor original, de 1 a 0, o de 0 a 1
+	c = !a;
+	printf("\nResultado operador not: %d", c);
 	
 	return 0;
 }
