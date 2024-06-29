@@ -2,36 +2,24 @@
 #include <stdbool.h>
 
 int main() {
+	int a, b;
+	int suma, resta, division, multiplicacion;
 	
-	// Operadores Relacionales (Comparacion)
-	int a = 5;
-	int b = 6;
-	printf("Valor a: %d", a);
-	printf("\nValor b: %d", b);
+	printf("Introdusca 2 numeros:");
+	scanf("%i %i", &a ,&b);
 	
-	// Operador igualdad
-	bool c = a == b;
-	printf("\na igual que b? %d", c);
+	printf("\nValor de a: %i", a);
+	printf("\nValor de b: %i", b);
 	
-	// Operador distinto !
-	c = a != b;
-	printf("\na distinto que b? %d", c);
+	suma = a + b;
+	resta = a - b;
+	division = a / b;
+	multiplicacion = a * b;
 	
-	// Operador Mayor que
-	c = a > b;
-	printf("\na mayor que b? %d", c);
-	
-	// Operador Mayor o igual que
-	c = a >= b;
-	printf("\na mayor o igual que b? %d ", c);
-	
-	// Operador Menor que 
-	c = a < b;
-	printf("\na menor que b? %d", c);
-	
-	// Operador Menor o igual que
-	c = a <= b;
-	printf("\na menor o igual que b? %d", c);
+	printf("\nResultado de suma: %i", suma);
+	printf("\nResultado de resta: %i", resta);
+	printf("\nResultado de division: %i", division);
+	printf("\nResultado de multiplicacion: %i", multiplicacion);
 	
 	return 0;
 }
