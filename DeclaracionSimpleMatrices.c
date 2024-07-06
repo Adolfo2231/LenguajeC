@@ -1,5 +1,5 @@
 #include <stdio.h>
-// Se definieron antes para que no tenga problemas al compilar
+// Se definieron las constantes antes para que no tenga problemas al compilar
 #define REGLONES 2
 #define COLUMNAS 3
 
