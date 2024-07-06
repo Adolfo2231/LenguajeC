@@ -1,3 +1,7 @@
 Funciones - Las funciones al ser individuales de nuestra funcion principal toda variable que se crea ahi se destruye.
-Es decir que igualmente necesitamos variables inicializadas en la funcion principal para poder tomar o mandar info
+Es decir que igualmente necesitamos variables inicializadas en la funcion principal para poder mandar copia de la info de esas variables a las variable locales de la funcion
 Al inicializar una funcion se declara de que tipo sera, de no devolver ningun valor sera una funcion void
+Apuntadores - es una variable que a su vez apunta a otra variable/guarda una direccion de memoria
+Referencia en memoria - numeros exadecimales que contienen un espacio en memoria
+Especificador de formato - %p (pointer) para poder imprimir una direccion de memoria 
+printf("\nDireccion memoria miNumero: %p", &miNumero);
