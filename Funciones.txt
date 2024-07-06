@@ -5,3 +5,5 @@ Apuntadores - es una variable que a su vez apunta a otra variable/guarda una dir
 Referencia en memoria - numeros exadecimales que contienen un espacio en memoria
 Especificador de formato - %p (pointer) para poder imprimir una direccion de memoria 
 printf("\nDireccion memoria miNumero: %p", &miNumero);
+Declarar un var *pointer
+Es %d y *apuntador ya que queremos ver el valor que hay guardado en ese espacio de memoria
