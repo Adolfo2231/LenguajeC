@@ -1,0 +1,3 @@
+Funciones - Las funciones al ser individuales de nuestra funcion principal toda variable que se crea ahi se destruye.
+Es decir que igualmente necesitamos variables inicializadas en la funcion principal para poder tomar o mandar info
+Al inicializar una funcion se declara de que tipo sera, de no devolver ningun valor sera una funcion void
