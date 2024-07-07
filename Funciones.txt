@@ -19,3 +19,4 @@ PASO POR VALOR - mandar una copia de lo que habia en la variable, no afecta la v
 TIPOS SIMPLES - int, double, bool, float, char
 TIPOS COMPUESTOS - arreglos, matrices
 
+PASO POR REFERENCIA - edita lo que hay en esa dir. de memoria asi editando el valor antes establecido*/
