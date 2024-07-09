@@ -3,47 +3,52 @@
 int calculo(int *rEcuacion, int *num1, int *num2)
 {
 
-    if (*rEcuacion == 1)
-    {
+    if (*rEcuacion == 1){
         *rEcuacion = *num1 * *num2;
     }
-    else if (*rEcuacion == 2)
-    {
-
+    else if (*rEcuacion == 2){
         *rEcuacion = *num1 / *num2;
     }
-    else if (*rEcuacion == 3)
-    {
-
+    else if (*rEcuacion == 3){
         *rEcuacion = *num1 + *num2;
     }
-    else if (*rEcuacion == 4)
-    {
+    else  {
         *rEcuacion = *num1 - *num2;
     }
-    else
-    {
-        printf("Valor ingresado erroneo");
-    }
-
+    
     return *rEcuacion;
 }
 
 int main()
 {
     int ecuacion, num1, num2;
-    printf("Proporcione la ecuacion deseada: \n 1) Multiplicacion \n 2) Division\n 3) Suma\n 4) Resta\n");
-    scanf("%d", &ecuacion);
+    bool condicion;
 
-    printf("Proporciona el primer numero: ");
-    scanf("%i", &num1);
+    do
+    {
+        printf("Proporcione la ecuacion deseada: \n 1) Multiplicacion \n 2) Division\n 3) Suma\n 4) Resta\n");
+        scanf("%d", &ecuacion);
+        condicion = ecuacion <= 4 && ecuacion > 0;
 
-    printf("Proporciona el segundo numero: ");
-    scanf("%i", &num2);
+        if (ecuacion <= 4 && ecuacion > 0)
+        {
+            printf("\nProporciona el primer numero: ");
+            scanf("%i", &num1);
 
-    calculo(&ecuacion, &num1, &num2);
+            printf("\nProporciona el segundo numero: ");
+            scanf("%i", &num2);
+
+            calculo(&ecuacion, &num1, &num2);
+
+        } 
+        else{
+            printf("\nNumero proporcionado erroneo\n\n ");
+        }
+        
+
+    } while (!condicion);
 
     printf("\nResultado: %d", ecuacion);
-
+    
     return 0;
 }
