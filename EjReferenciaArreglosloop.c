@@ -16,14 +16,16 @@ void cArreglo(int arreglo[], int *reg) //[]Recibe referencia de memoria
      */
 }
 
-void cMatrix(int arreglo[], int *reg, int *colum)
+void cMatrix(int *arreglo, int *reg, int *colum)
 {
   for (int reglones = 0; reglones < *reg; reglones++)
     {
+        printf("Reglon [%d]", reglones);
+        
         for (int columnas = 0; columnas < *colum; columnas++)
         {
             printf("\nProporcione el dato a guardar en [%d][%d]: ", reglones, columnas);
-            scanf("%d", &arreglo[reglones][columnas]);
+            scanf("%d", *arreglo[*reg][*colum]);
         }
     }
 }
@@ -54,6 +56,9 @@ int main()
         scanf("%d", &COLUM);
 
         cMatrix(argMatrix, &REG, &COLUM);
+    }
+    else {
+        printf("\nDato proporcionado invalido");
     }
 
     return 0;
