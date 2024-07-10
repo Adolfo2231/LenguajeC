@@ -20,3 +20,8 @@ TIPOS SIMPLES - int, double, bool, float, char
 TIPOS COMPUESTOS - arreglos, matrices
 
 PASO POR REFERENCIA - edita lo que hay en esa dir. de memoria asi editando el valor antes establecido*/
+
+Memoria Stack - donde se almanecan las variables locales
+heap - crea o se utiliza para tipos compuestos, poseen una mayor duracion en memoria pero se borran al culminar de compilar el programa
+
+1)PASO POR REFERENCIA CADENAS - Los arreglos se manejan con apuntadores. Al cambiar una cadena desde una funcion no se puede ya que este crea una direccion de memoria adicional donde se guarda el nuevo valor del parametro siempre y cuando sea la funcion void
