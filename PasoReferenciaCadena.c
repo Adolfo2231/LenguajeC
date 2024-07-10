@@ -1,25 +1,21 @@
 #include <stdio.h>
 
-void cambiarValor(char *parametro)
+char* cambiarValor(char *parametro)
 {
-    // Se crea una nueva cadena
-    // Las cadenas no se pueden modificar desde un metodo
-    parametro[0] = 'A'; // esto manda error
-    // Y si la modificamos se crea una nueva cadena
-    // en otra direccion de memoria
+    // Cambiamos los valores del arreglo
     parametro = "Adios";
+    return parametro;
 }
 
 int main()
 {
-    // Ejemplo de paso por valor
-    // char argumento[] = "Hola";
-    char *argumento = "Hola";
-
-    //Especificador %s para leer cadenas(String)
-    printf("Antes llamar funcion: %s", argumento);
-    cambiarValor(argumento);
-    printf("\nDespues llamar funcion: %s", argumento);
+    // Ejemplo de paso por referencia
+    // char arg[] = "Hola";
+    char *arg = "Hola";
+    printf("Antes llamar funcion: %s", arg);
+    // Los arreglos siempre se pasan por referencia
+    arg = cambiarValor(arg);
+    printf("\nDespues llamar funcion: %s", arg);
 
     return 0;
 }
