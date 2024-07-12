@@ -20,3 +20,5 @@ TIPOS SIMPLES - int, double, bool, float, char
 TIPOS COMPUESTOS - arreglos, matrices
 
 PASO POR REFERENCIA - edita lo que hay en esa dir. de memoria asi editando el valor antes establecido*/
+
+La variables locales tienen prioridad si tienen el mismo nombre

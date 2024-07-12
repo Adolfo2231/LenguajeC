@@ -10,6 +10,16 @@ void cambio(int variableLocalFuncion)
 
     // Cambiamos el valor de la variableLocalFuncion
     variableLocalFuncion = 40;
+
+    //Cramos una variable local (ocultar a la global)
+    int a = 50;
+    int b = 60;
+
+    //Cambiamos variable global
+    variableGlobal = 70;
+    printf("Variable local (funcion): %d\n", variableLocalFuncion);
+    printf("Variable local a (funcion): %d\n", a);
+    printf("Variable local b (funcion): %d\n", b);
 }
 
 int main()
