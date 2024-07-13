@@ -1,0 +1,2 @@
+Funcion strncpy(string copy) -
+strncpy(varDestino, &var[desde donde comienza], cuantos caracteres quieres leer)
