@@ -1,2 +1,10 @@
-Funcion strncpy(string copy) -
+Funcion strncpy(string copy) - 
 strncpy(varDestino, &var[desde donde comienza], cuantos caracteres quieres leer)
+
+atoi(stringVar, intVar) = Cambiara el valor ascii a int
+
+itoa(intVar, stringVar) = Cambiara el valor de int a ascii
+
+strcat(destino, origen) = Union de 2 cadenas
+
+strlen(cadena) - Leer longitud de cadena
