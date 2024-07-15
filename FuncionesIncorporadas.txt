@@ -10,3 +10,7 @@ strcat(destino, origen) = Union de 2 cadenas
 strlen(cadena) - Leer longitud de cadena
 
 abs(numero) = Valor absoluto (cambiara el # de + a -)
+
+round(numero) - Redondeo hasta el proximo numero si es 8.5 = 9 de ser inferior 8.4 se redondea  8
+
+trunc(numero) - Omite los decimales solo muestra el entero
