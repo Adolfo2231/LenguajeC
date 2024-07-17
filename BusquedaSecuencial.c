@@ -6,7 +6,7 @@ int main()
     int a[10] = {2, 5, 6, 9, 3, 1, 4, 8, 7, 0};
     int i, dato;
     char band = 'F';
-
+    fflush(stdin);
     printf("Escribe un numero\n");
     scanf("%i", &dato);
 
