@@ -15,7 +15,7 @@ int main()
     //* Apundor al archivo
     FILE *fd;
 
-    char direccion[] = "C:\\Users\ryzen\\OneDrive\\Documents\\Trabajos-C\\hola-mundo\\prueba.txt";
+    char direccion[] = "C:\\Users\\ryzen\\OneDrive\\Documents\\Trabajos-C\\hola-mundo\\prueba.txt";
 
     fd = fopen(direccion, "r"); // "r" = read -> leer
 
