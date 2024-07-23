@@ -14,7 +14,7 @@ int main()
     //* Creamos el apuntador y lo igualamos a lo que devuelva fopen
     //! Recuerda que el archivo no existe y se crearÃ¡ automaticamente
 
-    FILE *Archivo = fopen("Prueba3.txt", "a");
+    FILE *Archivo = fopen("Curso.txt", "a");
     //? Verificacion (NULL es el macro para la memoria nula)
 
     if (Archivo == NULL)
@@ -25,7 +25,7 @@ int main()
     {
         //* Definimos un texto y lo escribimos en el archivo
         char Texto[] = "Hola Mundo";
-        fprintf(Archivo, "Texto Escrito: %s", Texto);
+        fprintf(Archivo, "Texto Escrito: %s", Texto); //? almacena la data en el archivo
         printf("Archivo creado con exito\n");
     }
 
