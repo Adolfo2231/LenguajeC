@@ -3,7 +3,8 @@ ParÃ¡metro Significa abrir el archivo en modo
         w Escritura.Si el archivo no existe,
     se crea, si existe, se sobrescribe a Escritura al final del documento.Si no existe se crea rb Binario.Para lectura r + Lectura y escritura.El archivo debe existir w + Crear un archivo para escritura.Si existe se sobrescribe rb + Binario.Para actualizaciÃ³n(lectura y escritura)
 
-                                                                                                                                                                                                                                             fputc(Caracter, ApuntadorArchivo) es una funciÃ³n nos permite escribir un caracter en el archivo,
+                                                                                                                                                                                                                                             
+                                                                                                                                                                                                fputc(Caracter, ApuntadorArchivo) es una funciÃ³n nos permite escribir un caracter en el archivo,
     regresa el caracter que se presionÃ³ en caso de que la operaciÃ³n se realice con Ã©xito o
     EOF si fallÃ³.El puntador es el que nos brinda la funciÃ³n fopen.
 
