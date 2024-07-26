@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "suma.h"
+#include "Funciones.h"
 
 int main(){
 
@@ -10,8 +10,15 @@ int main(){
 
     pa = &a;
     pb = &b;
-    int respuesta = suma(pa, pb);
+    int respuestaSuma = suma(pa, pb);
+    int respuestaResta = resta(pa, pb);
+    int respuestaMultiplicacion = multiplicacion(pa, pb);
+    int respuestaDivision = division(pa, pb);
 
-    printf("\nResultado de suma: %i",respuesta);
+    printf("\nResultado de suma: %i",respuestaSuma);
+    printf("\nResultado de resta: %i", respuestaResta);
+    printf("\nResultado de multiplicacion: %i", respuestaMultiplicacion);
+    printf("\nResultado de division: %i", respuestaDivision);
+
     return 0;
 }
