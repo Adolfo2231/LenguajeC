@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+//? Reserva espacio de memoria dinamica
 int main (){
 
     char nombre[20], *p_nombre;

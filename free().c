@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//? Vacia el espacio de memoria  reservado con malloc
 int main()
 {
 
