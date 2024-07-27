@@ -1,0 +1,5 @@
+malloc - Devuelve un valor vacio por ende se suele utilizar un cast par poder convertir el void en entero etc.
+
+
+calloc - reserva espacio de memoria pero limpia el almacenamiento, calloc recibe 2 argumentos
+calloc(size, size)
