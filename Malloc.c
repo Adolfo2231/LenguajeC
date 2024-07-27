@@ -4,6 +4,7 @@
 
 
 //? Reserva espacio de memoria dinamica
+//! malloc(Espacios necesarios *sizeof(int,char))
 int main (){
 
     char nombre[20], *p_nombre;
