@@ -6,11 +6,29 @@ de memoria dinamica utilizado.*/
 #include <stdio.h>
 #include <stdlib.h>
 
+void elementos(int *p, float *array)
+{
+
+    array = (float *)calloc(*p, sizeof(float));
+    for (int i = 0; i < *p; i++)
+
+    {
+        printf("Elemento [%i]: ", i);
+        scanf("%f", &array[i]); //?Guardando en la memoria reservada
+    }
+
+    for (int i = 0; i < *p; i++)
+    {
+        printf("\nElemento guardado en[%i]: %f ", i, array[i]);
+    }
+}
+
 int main()
 {
 
-    int cantidad;
+    int cantidad, *pCantidad;
     float *array;
+
     FILE *Archivo = fopen("Curso.txt", "w");
 
     if (Archivo == NULL)
@@ -19,24 +37,22 @@ int main()
     }
     else
 
-    printf("Cantidad de elementos deseados: ");
+        printf("Cantidad de elementos deseados: ");
     scanf("%i", &cantidad);
 
-    array = calloc(cantidad, sizeof(float));
-    for (int i = 0; i < cantidad; i++)
+    pCantidad = &cantidad;
+    elementos(pCantidad, array);
 
-    {
-        printf("Elemento [%i]: ", i + 1);
-        scanf("%f", &array[i]);//?Guardando en la memoria reservada
-    }
-
-    for (int i = 0; i < cantidad; i++)
-    {
-        printf("\nElemento [%i]: %.2f", i, array[i]);//?Imprimiendo memoria dinamica
-        fprintf(Archivo,"\nElemento[%i]: %f", i + 1, array[i]);//*Escribiendo en el archivo
-    }
-
-    free(array);//?Liberando memoria dinamica
-    fclose(Archivo);//*Cerrando archivo
+    free(array);     //?Liberando memoria dinamica
+    fclose(Archivo); //*Cerrando archivo
     return 0;
+}
+
+void mostrar(int *p, float *array)
+{
+
+    for (int i = 0; i < *p; i++)
+    {
+        printf("\nElemento [%i]: %.2f", i, array[i]); //?Imprimiendo memoria dinamica
+    }
 }
