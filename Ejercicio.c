@@ -4,6 +4,7 @@ el array, imprimir todos los elementos, y por ultimo liberar el espacio
 de memoria dinamica utilizado.*/
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main()
 {

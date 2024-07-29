@@ -1,4 +1,3 @@
 
-Elemento[1]: 12.524000
-Elemento[2]: 34.354599
-Elemento[3]: 34.546001
+Elemento[1]: 12.324000
+Elemento[2]: 321.339996
