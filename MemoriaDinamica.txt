@@ -1,7 +1,8 @@
 malloc - Devuelve un valor vacio por ende se suele utilizar un cast par poder convertir el void en entero etc.
-
+malloc((longitud + 1) *sizeof(char));
 
 calloc - reserva espacio de memoria pero limpia el almacenamiento, calloc recibe 2 argumentos
 calloc(size, size)
 
 realloc - Permite ampliar el bloque de memoria
+realloc(*pvarAmpliar, cantidad*sizeof(tipo))
