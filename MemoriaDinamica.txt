@@ -6,3 +6,6 @@ calloc(size, size)
 
 realloc - Permite ampliar el bloque de memoria
 realloc(*pvarAmpliar, cantidad*sizeof(tipo))
+
+fgets(din->nombre, 15, stdin);
+ fgets(apuntador, tamanio, entrada)

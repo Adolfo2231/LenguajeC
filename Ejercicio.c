@@ -22,6 +22,7 @@ void archivo( int *p, float *array){
         }
         
     }
+    
 
     fclose(Archivo); //*Cerrando archivo
 }
@@ -41,6 +42,24 @@ void elementos(int *p, float *array)
     mostrar(p, array); //?Mandando info para funcion mostrar
 }
 
+void alMemoria(int *p, float *array){
+
+    char respuesta;
+    int memo;
+
+    printf("Desea reservar mas memoria ?: (s)");
+    scanf("%c", &respuesta);
+
+    if (respuesta == 's'){
+
+        printf("Cantidad de elementos deseados: ");
+        scanf("%i", &p);
+        array = realloc(array, p*sizeof(float));
+
+        /* code */
+    }
+    
+}
 int main()
 {
     int cantidad, *pCantidad;

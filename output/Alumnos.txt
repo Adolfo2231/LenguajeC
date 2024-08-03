@@ -1,0 +1,13 @@
+Nombre: AdolfoApellido: RodriguezNumero de cuenta: 123Promedio: 12.25
+Nombre: Alejandro
+Apellido: Rodriguez
+Numero de cuenta: 15
+Promedio: 12.36
+Nombre: sdf
+Apellido: sfsd
+Numero de cuenta: 123
+Promedio: 12.25
+Nombre: asdf
+Apellido: sadf
+Numero de cuenta: 12
+Promedio: 12.36
