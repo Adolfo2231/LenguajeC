@@ -2,13 +2,20 @@
 
 int main(){
 
-    Automovil *din;
-    int cantidad;
-    printf("Cantidad del arreglo deseado: ");
-    scanf("%i", &cantidad);
-    din = (Automovil *)calloc(cantidad, sizeof(Automovil));
-  
-    creandoArreglo(din);
+    
+    int cantidadAutos;
+    printf("Cantidad de autos a ingresar: ");
+    fflush(stdin);
+    scanf("%i", &cantidadAutos);
+
+    //**Apuntador a la estructura Automovil (reservando el espacio de memoria) */
+    Automovil *carrosCreados = (Automovil *)calloc(cantidadAutos, sizeof(Automovil));
+
+    llenarDatosAutomovil(carrosCreados, cantidadAutos);
+    printf("Imprimiendo datos Automovil..\n");
+
+    imprimirDatosAutomovil(carrosCreados, cantidadAutos);
+    free(carrosCreados);//!Liberando la memoria reservada
 
     return 0;
 }
