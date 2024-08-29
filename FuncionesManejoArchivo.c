@@ -2,7 +2,7 @@ Nombre FunciÃ³n
 fopen() Abre un archivo.
 fclose() Cierra un archivo.
 fgets() Lee una cadena de un archivo.
-fputs() Escribe una cadena en un archivo
+fputc() Escribe una cadena en un archivo
 fseek() Busca un byte especifico de un archivo.
 fprintf() Escribe una salida con formato en el archivo.
 fscanf() una entrada con formato desde el archivo.

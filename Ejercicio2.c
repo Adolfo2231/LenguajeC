@@ -15,7 +15,7 @@ int main()
     if (fd == NULL)
     {
         printf("Error al tratar de crear el archivo");
-        return 0
+        return 0;
     }
 
     while ((c = getchar()) != EOF)
