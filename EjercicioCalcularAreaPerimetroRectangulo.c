@@ -16,7 +16,7 @@ int main() {
 	perimetro = 2 * (base + altura);
 	
 	printf("\nArea del rectangulo: %d", area);
-	printf("\nPerimetro del rectangulo: %d", perimetro);
+	printf("\nPerimetro del rectangulo: %d\n", perimetro);
 	return 0;
 }
 
